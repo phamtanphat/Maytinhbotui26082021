@@ -9,14 +9,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center"
+        android:text="Máy tính bỏ túi"
         android:textAllCaps="true"
         android:textColor="#f20"
-        android:textSize="22sp"
-        android:text="Máy tính bỏ túi"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"/>
+        android:textSize="22sp" />
 
     <LinearLayout
         android:gravity="center"
@@ -52,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <TextView
+            android:id="@+id/textViewKetQua"
             android:textColor="@color/teal_700"
             android:textSize="22sp"
             tools:text="Kết quả : 10"
@@ -59,5 +60,48 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/buttonCong"
+            android:textSize="20sp"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:id="@+id/buttonTru"
+            android:textSize="20sp"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/buttonNhan"
+            android:textSize="20sp"
+            android:text="x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:id="@+id/buttonChia"
+            android:textSize="20sp"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>
