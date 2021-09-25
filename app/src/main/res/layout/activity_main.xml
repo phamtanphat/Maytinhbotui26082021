@@ -19,12 +19,43 @@
         android:layout_height="0dp"/>
 
     <LinearLayout
+        android:gravity="center"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <EditText
+            android:id="@+id/edittextSoThu1"
+            android:maxLength="4"
+            android:inputType="number"
             android:hint="Nhập số thứ 1"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/edittextSoThu2"
+            android:maxLength="4"
+            android:inputType="number"
+            android:hint="Nhập số thứ 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textColor="@color/teal_700"
+            android:textSize="22sp"
+            tools:text="Kết quả : 10"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
